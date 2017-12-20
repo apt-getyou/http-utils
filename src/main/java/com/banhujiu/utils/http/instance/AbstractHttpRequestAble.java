@@ -1,7 +1,7 @@
 package com.banhujiu.utils.http.instance;
 
 import java.io.IOException;
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 import org.apache.http.HttpEntity;
@@ -20,7 +20,7 @@ import com.banhujiu.utils.http.exception.NullUrlException;
  * @date 2017/12/18 0018 12:14
  */
 public abstract class AbstractHttpRequestAble implements HttpRequestAble {
-	private Map<String, String> paramMap = new HashMap<>();
+	private Map<String, String> paramMap = new LinkedHashMap<>();
 	private String charset = "utf-8";
 	private String url;
 	private String result;
